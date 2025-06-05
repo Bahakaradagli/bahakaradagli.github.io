@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yetenek Avcısı - Destek</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #39FF14;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #39FF14;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      max-width: 600px;
+      text-align: center;
+      line-height: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    input[type="submit"] {
+      background-color: #39FF14;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #00cc66;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #888;
+      text-align: center;
+    }
+
+    .info-box {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      max-width: 600px;
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #39FF14;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Yetenek Avcısı Destek</h1>
+  <p>Uygulamayla ilgili her türlü soru, istek ya da sorun için bize aşağıdaki formdan ulaşabilirsin.</p>
+
+  <form action="https://formspree.io/f/myzwagvw" method="POST">
+    <input type="text" name="name" placeholder="Adınız" required />
+    <input type="email" name="email" placeholder="E-posta" required />
+    <textarea name="message" rows="5" placeholder="Mesajınız" required></textarea>
+    <input type="submit" value="Gönder" />
+  </form>
+
+  <div class="info-box">
+    <p><strong>Destek Süreci:</strong> Tüm mesajlar en geç <strong>3 iş günü</strong> içerisinde yanıtlanmaktadır. Acil bir durum varsa lütfen e-posta yoluyla da bize ulaş: <a href="mailto:yetenekavcisi.support@gmail.com">yetenekavcisi.support@gmail.com</a></p>
+    <p><strong>Gizliliğinize önem veriyoruz.</strong> Gönderdiğiniz bilgiler sadece destek hizmetleri için kullanılacak ve üçüncü taraflarla paylaşılmayacaktır.</p>
+  </div>
+
+  <footer>
+    © 2025 Yetenek Avcısı | Tüm Hakları Saklıdır
+  </footer>
+
+</body>
+</html>
